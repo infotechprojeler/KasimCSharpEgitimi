@@ -123,6 +123,17 @@
             {
                 Console.WriteLine("marka: " + marka.Name);
             }
+            var urun = new Urun()
+            {
+                Id = 2,
+                Marka = marka,
+                Name = "Abra a18 Notebook",
+                Description = "Game pc",
+                Price = 49900,
+            };
+            Console.WriteLine("Ürün Detayı:");
+            Console.WriteLine(urun.Marka.Name + " " + urun.Name);
+            Console.WriteLine("Fiyat: " + urun.Price + " TL");
         }
     }
 }
