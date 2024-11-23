@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konu06Diziler", "Konu06Dizi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konu07Donguler", "Konu07Donguler\Konu07Donguler.csproj", "{3DDAB8A1-5F8A-40B8-94CC-C7802058E10C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu08SiniflarClasses", "Konu08SiniflarClasses\Konu08SiniflarClasses.csproj", "{C9CE3DFB-67C7-4ECE-9AF7-C43EBF8137C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konu08SiniflarClasses", "Konu08SiniflarClasses\Konu08SiniflarClasses.csproj", "{C9CE3DFB-67C7-4ECE-9AF7-C43EBF8137C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu09StructYapilar", "Konu09StructYapilar\Konu09StructYapilar.csproj", "{E74C97B2-F1DF-44B5-BB79-B66C962C9F98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Konu09StructYapilar", "Konu09StructYapilar\Konu09StructYapilar.csproj", "{E74C97B2-F1DF-44B5-BB79-B66C962C9F98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu10StringSinifi", "Konu10StringSinifi\Konu10StringSinifi.csproj", "{76FEAE9A-9049-4D82-8518-3D2F4143B12C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{E74C97B2-F1DF-44B5-BB79-B66C962C9F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E74C97B2-F1DF-44B5-BB79-B66C962C9F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E74C97B2-F1DF-44B5-BB79-B66C962C9F98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76FEAE9A-9049-4D82-8518-3D2F4143B12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FEAE9A-9049-4D82-8518-3D2F4143B12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FEAE9A-9049-4D82-8518-3D2F4143B12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FEAE9A-9049-4D82-8518-3D2F4143B12C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
