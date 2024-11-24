@@ -38,7 +38,9 @@
             {
                 Console.WriteLine(bolum.GetBolumAdi() + " bölümüne kaydınız yapılmıştır"); // dışarıdan yollanan veriyi çağırıyoruz
             }
-
+            Fakulte fakulte = new Fakulte();
+            fakulte.Bolum = secilen;
+            Console.WriteLine(fakulte.Bolum);
         }
     }
     // Property Kullanarak Kapsülleme İşlemi
@@ -53,7 +55,14 @@
             }
             set
             {
-                bolum = value;
+                if (value == "Yazılım")
+                {
+                    bolum = value;
+                }
+                else
+                {
+                    Console.WriteLine("Kurumumuzda " + value +" Eğitimi Bulunmamakta!");
+                }
             }
         }
     }
