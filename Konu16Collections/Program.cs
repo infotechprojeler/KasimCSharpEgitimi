@@ -267,6 +267,18 @@ namespace Konu16Collections
 
             Console.WriteLine("Listede yeniKullanici var mı?");
             Console.WriteLine(kullanicilar.Contains(yeniKullanici));
+
+            Console.WriteLine();
+
+            foreach (var item in kullanicilar)
+                Console.WriteLine(item.Name);
+
+            kullanicilar.Insert(0, yeniKullanici); // Insert metodu listedeki belirtilen indexe kaydı ekler
+
+            Console.WriteLine();
+
+            foreach (var item in kullanicilar)
+                Console.WriteLine(item.Name);
         }
     }
 }
