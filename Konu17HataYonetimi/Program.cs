@@ -28,6 +28,19 @@
                 Console.WriteLine("Oluşan Hata:");
                 Console.WriteLine(hata); // hata nesnesi üzerinden oluşan hatayı yakalayıp işlem yapabiliriz.
                 // burada oluşan hata bilgilerini kendimize mail olarak gönderebiliriz
+
+                Console.WriteLine();
+
+                Console.WriteLine("hata.Message:");
+                Console.WriteLine(hata.Message);
+            }
+            finally
+            {
+                Console.WriteLine("finally bloğu çalıştı!");
+                // burada try catch bloğu çalıştıktan sonra her seferinde yapmak istediğimiz işlemleri yapabiliriz.
+                Console.WriteLine("Fiyat giriniz:");
+                var fiyat2 = Console.ReadLine();
+                KdvHesapla(double.Parse(fiyat2));
             }
 
         }
