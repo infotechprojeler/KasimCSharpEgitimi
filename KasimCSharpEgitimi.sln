@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Konu17HataYonetimi", "Konu1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDPrensipleri", "SOLIDPrensipleri\SOLIDPrensipleri.csproj", "{725E2D67-5CD1-4A20-85FD-80D47FDFB765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsEgitim", "WindowsFormsEgitim\WindowsFormsEgitim.csproj", "{914ED5DD-27EF-4391-A18C-B3F9C9FD9FFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{725E2D67-5CD1-4A20-85FD-80D47FDFB765}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{725E2D67-5CD1-4A20-85FD-80D47FDFB765}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{725E2D67-5CD1-4A20-85FD-80D47FDFB765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914ED5DD-27EF-4391-A18C-B3F9C9FD9FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914ED5DD-27EF-4391-A18C-B3F9C9FD9FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914ED5DD-27EF-4391-A18C-B3F9C9FD9FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914ED5DD-27EF-4391-A18C-B3F9C9FD9FFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
