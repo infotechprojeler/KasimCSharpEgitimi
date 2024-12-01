@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsEgitim
@@ -16,7 +13,7 @@ namespace WindowsFormsEgitim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form4()); // başlangıçta hangi form ekrana gelsin
+            Application.Run(new Form8()); // başlangıçta hangi form ekrana gelsin
         }
     }
 }

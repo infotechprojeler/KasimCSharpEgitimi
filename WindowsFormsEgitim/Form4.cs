@@ -29,5 +29,18 @@ namespace WindowsFormsEgitim
             else
                 MessageBox.Show("Adınızı Giriniz!");
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Çıkmak İstiyor Musunuz?", "Uyarı", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Close();
+            }
+        }
     }
 }
