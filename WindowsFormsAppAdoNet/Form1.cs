@@ -28,5 +28,14 @@ namespace WindowsFormsAppAdoNet
             UrunYonetimi urunYonetimi = new UrunYonetimi();
             urunYonetimi.Show();
         }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            if (txtKullaniciAdi.Text == "Admin" && txtSifre.Text == "123")
+            {
+                menuStrip1.Visible = true;
+                groupBox1.Visible = false;
+            }
+        }
     }
 }

@@ -16,10 +16,10 @@ namespace WindowsFormsAppAdoNet
         {
             InitializeComponent();
         }
-
+        UrunDAL urunDAL = new UrunDAL();
         private void UrunYonetimi_Load(object sender, EventArgs e)
         {
-
+            dgvUrunler.DataSource = urunDAL.UrunleriGetir();
         }
     }
 }

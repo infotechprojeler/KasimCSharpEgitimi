@@ -31,7 +31,7 @@
             this.gbUrunKayitFormu = new System.Windows.Forms.GroupBox();
             this.rtbUrunOzellikleri = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnEkle = new System.Windows.Forms.Button();
             this.cbDurum = new System.Windows.Forms.CheckBox();
             this.cmbKategoriler = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             // 
             this.gbUrunKayitFormu.Controls.Add(this.rtbUrunOzellikleri);
             this.gbUrunKayitFormu.Controls.Add(this.label8);
-            this.gbUrunKayitFormu.Controls.Add(this.btnKaydet);
+            this.gbUrunKayitFormu.Controls.Add(this.btnEkle);
             this.gbUrunKayitFormu.Controls.Add(this.cbDurum);
             this.gbUrunKayitFormu.Controls.Add(this.cmbKategoriler);
             this.gbUrunKayitFormu.Controls.Add(this.label7);
@@ -86,14 +86,14 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "Ürün Özellikleri";
             // 
-            // btnKaydet
+            // btnEkle
             // 
-            this.btnKaydet.Location = new System.Drawing.Point(278, 91);
-            this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(199, 38);
-            this.btnKaydet.TabIndex = 10;
-            this.btnKaydet.Text = "Kaydet";
-            this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnEkle.Location = new System.Drawing.Point(278, 91);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(109, 38);
+            this.btnEkle.TabIndex = 10;
+            this.btnEkle.Text = "Ekle";
+            this.btnEkle.UseVisualStyleBackColor = true;
             // 
             // cbDurum
             // 
@@ -219,7 +219,7 @@
         private System.Windows.Forms.GroupBox gbUrunKayitFormu;
         private System.Windows.Forms.RichTextBox rtbUrunOzellikleri;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.CheckBox cbDurum;
         private System.Windows.Forms.ComboBox cmbKategoriler;
         private System.Windows.Forms.Label label7;

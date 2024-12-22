@@ -50,19 +50,20 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(278, 161);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(245, 129);
+            this.groupBox1.Size = new System.Drawing.Size(245, 149);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kullanıcı Girişi";
             // 
             // btnGiris
             // 
-            this.btnGiris.Location = new System.Drawing.Point(78, 88);
+            this.btnGiris.Location = new System.Drawing.Point(65, 98);
             this.btnGiris.Name = "btnGiris";
-            this.btnGiris.Size = new System.Drawing.Size(95, 35);
+            this.btnGiris.Size = new System.Drawing.Size(111, 35);
             this.btnGiris.TabIndex = 4;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // label2
             // 
@@ -77,6 +78,7 @@
             // 
             this.txtSifre.Location = new System.Drawing.Point(121, 60);
             this.txtSifre.Name = "txtSifre";
+            this.txtSifre.PasswordChar = '*';
             this.txtSifre.Size = new System.Drawing.Size(100, 22);
             this.txtSifre.TabIndex = 2;
             // 
@@ -86,6 +88,7 @@
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(100, 22);
             this.txtKullaniciAdi.TabIndex = 1;
+            this.txtKullaniciAdi.Text = "Admin";
             // 
             // label1
             // 
@@ -107,6 +110,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Visible = false;
             // 
             // kategoriYonetimiToolStripMenuItem
             // 
