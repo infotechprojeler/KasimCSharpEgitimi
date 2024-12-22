@@ -16,5 +16,17 @@ namespace WindowsFormsAppAdoNet
         {
             InitializeComponent();
         }
+
+        private void kategoriYonetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KategoriYonetimi kategoriYonetimi = new KategoriYonetimi();
+            kategoriYonetimi.Show();
+        }
+
+        private void urunYonetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UrunYonetimi urunYonetimi = new UrunYonetimi();
+            urunYonetimi.Show();
+        }
     }
 }
