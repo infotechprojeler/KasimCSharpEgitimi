@@ -9,5 +9,6 @@
         public string Brand { get; set; }
         public int Stock { get; set; }
         public bool IsActive { get; set; }
+        public int KategoriId { get; set; }
     }
 }

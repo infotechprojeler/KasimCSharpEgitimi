@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.gbUrunKayitFormu = new System.Windows.Forms.GroupBox();
-            this.rtbUrunOzellikleri = new System.Windows.Forms.RichTextBox();
+            this.txtUrunOzellikleri = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnEkle = new System.Windows.Forms.Button();
             this.cbDurum = new System.Windows.Forms.CheckBox();
@@ -43,13 +43,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvUrunler = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtStok = new System.Windows.Forms.TextBox();
+            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.btnSil = new System.Windows.Forms.Button();
             this.gbUrunKayitFormu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.SuspendLayout();
             // 
             // gbUrunKayitFormu
             // 
-            this.gbUrunKayitFormu.Controls.Add(this.rtbUrunOzellikleri);
+            this.gbUrunKayitFormu.Controls.Add(this.btnSil);
+            this.gbUrunKayitFormu.Controls.Add(this.btnGuncelle);
+            this.gbUrunKayitFormu.Controls.Add(this.txtStok);
+            this.gbUrunKayitFormu.Controls.Add(this.label1);
+            this.gbUrunKayitFormu.Controls.Add(this.txtUrunOzellikleri);
             this.gbUrunKayitFormu.Controls.Add(this.label8);
             this.gbUrunKayitFormu.Controls.Add(this.btnEkle);
             this.gbUrunKayitFormu.Controls.Add(this.cbDurum);
@@ -64,18 +72,18 @@
             this.gbUrunKayitFormu.Controls.Add(this.label3);
             this.gbUrunKayitFormu.Location = new System.Drawing.Point(33, 31);
             this.gbUrunKayitFormu.Name = "gbUrunKayitFormu";
-            this.gbUrunKayitFormu.Size = new System.Drawing.Size(946, 143);
+            this.gbUrunKayitFormu.Size = new System.Drawing.Size(946, 183);
             this.gbUrunKayitFormu.TabIndex = 2;
             this.gbUrunKayitFormu.TabStop = false;
             this.gbUrunKayitFormu.Text = "Ürün Girişi";
             // 
-            // rtbUrunOzellikleri
+            // txtUrunOzellikleri
             // 
-            this.rtbUrunOzellikleri.Location = new System.Drawing.Point(625, 21);
-            this.rtbUrunOzellikleri.Name = "rtbUrunOzellikleri";
-            this.rtbUrunOzellikleri.Size = new System.Drawing.Size(307, 108);
-            this.rtbUrunOzellikleri.TabIndex = 12;
-            this.rtbUrunOzellikleri.Text = "";
+            this.txtUrunOzellikleri.Location = new System.Drawing.Point(625, 21);
+            this.txtUrunOzellikleri.Name = "txtUrunOzellikleri";
+            this.txtUrunOzellikleri.Size = new System.Drawing.Size(307, 108);
+            this.txtUrunOzellikleri.TabIndex = 12;
+            this.txtUrunOzellikleri.Text = "";
             // 
             // label8
             // 
@@ -88,12 +96,13 @@
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(278, 91);
+            this.btnEkle.Location = new System.Drawing.Point(223, 139);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(109, 38);
             this.btnEkle.TabIndex = 10;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // cbDurum
             // 
@@ -107,17 +116,13 @@
             // 
             // cmbKategoriler
             // 
+            this.cmbKategoriler.DisplayMember = "Name";
             this.cmbKategoriler.FormattingEnabled = true;
-            this.cmbKategoriler.Items.AddRange(new object[] {
-            "Elektronik",
-            "Bilgisayar",
-            "Telefon",
-            "Kitap",
-            "Mobilya"});
             this.cmbKategoriler.Location = new System.Drawing.Point(356, 37);
             this.cmbKategoriler.Name = "cmbKategoriler";
             this.cmbKategoriler.Size = new System.Drawing.Size(121, 24);
             this.cmbKategoriler.TabIndex = 8;
+            this.cmbKategoriler.ValueMember = "Id";
             // 
             // label7
             // 
@@ -189,18 +194,59 @@
             // 
             this.dgvUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUrunler.Location = new System.Drawing.Point(33, 218);
+            this.dgvUrunler.Location = new System.Drawing.Point(12, 238);
             this.dgvUrunler.Name = "dgvUrunler";
             this.dgvUrunler.RowHeadersWidth = 51;
             this.dgvUrunler.RowTemplate.Height = 24;
-            this.dgvUrunler.Size = new System.Drawing.Size(946, 267);
+            this.dgvUrunler.Size = new System.Drawing.Size(967, 267);
             this.dgvUrunler.TabIndex = 3;
+            this.dgvUrunler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUrunler_CellClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(275, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 16);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Stok";
+            // 
+            // txtStok
+            // 
+            this.txtStok.Location = new System.Drawing.Point(356, 93);
+            this.txtStok.Name = "txtStok";
+            this.txtStok.Size = new System.Drawing.Size(100, 22);
+            this.txtStok.TabIndex = 14;
+            // 
+            // btnGuncelle
+            // 
+            this.btnGuncelle.Enabled = false;
+            this.btnGuncelle.Location = new System.Drawing.Point(356, 139);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(100, 38);
+            this.btnGuncelle.TabIndex = 15;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
+            // 
+            // btnSil
+            // 
+            this.btnSil.BackColor = System.Drawing.Color.Red;
+            this.btnSil.Enabled = false;
+            this.btnSil.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSil.Location = new System.Drawing.Point(478, 139);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(100, 38);
+            this.btnSil.TabIndex = 15;
+            this.btnSil.Text = "Sil";
+            this.btnSil.UseVisualStyleBackColor = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // UrunYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 517);
+            this.ClientSize = new System.Drawing.Size(1017, 517);
             this.Controls.Add(this.dgvUrunler);
             this.Controls.Add(this.gbUrunKayitFormu);
             this.Name = "UrunYonetimi";
@@ -217,7 +263,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox gbUrunKayitFormu;
-        private System.Windows.Forms.RichTextBox rtbUrunOzellikleri;
+        private System.Windows.Forms.RichTextBox txtUrunOzellikleri;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.CheckBox cbDurum;
@@ -231,5 +277,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvUrunler;
+        private System.Windows.Forms.TextBox txtStok;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGuncelle;
+        private System.Windows.Forms.Button btnSil;
     }
 }
