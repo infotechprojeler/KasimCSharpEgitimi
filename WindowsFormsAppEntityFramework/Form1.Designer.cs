@@ -109,19 +109,20 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.Visible = false;
             // 
             // kategoriYonetimiToolStripMenuItem
             // 
             this.kategoriYonetimiToolStripMenuItem.Name = "kategoriYonetimiToolStripMenuItem";
             this.kategoriYonetimiToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
             this.kategoriYonetimiToolStripMenuItem.Text = "Kategori Yönetimi";
+            this.kategoriYonetimiToolStripMenuItem.Click += new System.EventHandler(this.kategoriYonetimiToolStripMenuItem_Click);
             // 
             // urunYonetimiToolStripMenuItem
             // 
             this.urunYonetimiToolStripMenuItem.Name = "urunYonetimiToolStripMenuItem";
             this.urunYonetimiToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
             this.urunYonetimiToolStripMenuItem.Text = "Ürün Yönetimi";
+            this.urunYonetimiToolStripMenuItem.Click += new System.EventHandler(this.urunYonetimiToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -131,7 +132,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "EF Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

@@ -117,7 +117,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvKategoriler);
             this.Name = "KategoriYonetimi";
-            this.Text = "KategoriYonetimi";
+            this.Text = "EF Kategori Yonetimi";
+            this.Load += new System.EventHandler(this.KategoriYonetimi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKategoriler)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

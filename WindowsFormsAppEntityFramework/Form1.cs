@@ -16,5 +16,17 @@ namespace WindowsFormsAppEntityFramework
         {
             InitializeComponent();
         }
+
+        private void kategoriYonetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KategoriYonetimi kategoriYonetimi = new KategoriYonetimi();
+            kategoriYonetimi.ShowDialog();
+        }
+
+        private void urunYonetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UrunYonetimi urunYonetimi = new UrunYonetimi();
+            urunYonetimi.ShowDialog();
+        }
     }
 }

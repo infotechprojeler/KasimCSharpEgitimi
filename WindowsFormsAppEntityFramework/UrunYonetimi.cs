@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppEntityFramework
 {
-    public partial class KategoriYonetimi : Form
+    public partial class UrunYonetimi : Form
     {
-        public KategoriYonetimi()
+        public UrunYonetimi()
         {
             InitializeComponent();
-        }
-        DatabaseContext context = new DatabaseContext();
-        private void KategoriYonetimi_Load(object sender, EventArgs e)
-        {
-            dgvKategoriler.DataSource = context.Categories.ToList();
         }
     }
 }
