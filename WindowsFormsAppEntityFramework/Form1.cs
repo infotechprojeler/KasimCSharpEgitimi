@@ -28,5 +28,24 @@ namespace WindowsFormsAppEntityFramework
             UrunYonetimi urunYonetimi = new UrunYonetimi();
             urunYonetimi.ShowDialog();
         }
+        DatabaseContext databaseContext = new DatabaseContext();
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            var kullanici = databaseContext.Users.Where(x => x.UserName == txtKullaniciAdi.Text && x.Password == txtSifre.Text).FirstOrDefault();
+
+            if (kullanici != null)
+            {
+                groupBox1.Visible = false;
+                menuStrip1.Visible = true;
+            }
+            else
+                MessageBox.Show("Giriş Başarısız!");
+        }
+
+        private void kullanıcıYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KullaniciYonetimi kullaniciYonetimi = new KullaniciYonetimi();
+            kullaniciYonetimi.ShowDialog();
+        }
     }
 }

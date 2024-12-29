@@ -30,13 +30,13 @@
         {
             this.dgvKategoriler = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtAciklama = new System.Windows.Forms.RichTextBox();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnEkle = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtKategoriAdi = new System.Windows.Forms.TextBox();
-            this.txtAciklama = new System.Windows.Forms.RichTextBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKategoriler)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +49,7 @@
             this.dgvKategoriler.Name = "dgvKategoriler";
             this.dgvKategoriler.RowHeadersWidth = 51;
             this.dgvKategoriler.RowTemplate.Height = 24;
-            this.dgvKategoriler.Size = new System.Drawing.Size(466, 395);
+            this.dgvKategoriler.Size = new System.Drawing.Size(541, 395);
             this.dgvKategoriler.TabIndex = 4;
             this.dgvKategoriler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKategoriler_CellClick);
             // 
@@ -62,12 +62,20 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtKategoriAdi);
-            this.groupBox1.Location = new System.Drawing.Point(493, 12);
+            this.groupBox1.Location = new System.Drawing.Point(583, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(284, 230);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kategori Bilgileri";
+            // 
+            // txtAciklama
+            // 
+            this.txtAciklama.Location = new System.Drawing.Point(111, 62);
+            this.txtAciklama.Name = "txtAciklama";
+            this.txtAciklama.Size = new System.Drawing.Size(100, 96);
+            this.txtAciklama.TabIndex = 5;
+            this.txtAciklama.Text = "";
             // 
             // btnSil
             // 
@@ -101,6 +109,15 @@
             this.btnEkle.UseVisualStyleBackColor = true;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 16);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Açıklama";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -117,31 +134,15 @@
             this.txtKategoriAdi.Size = new System.Drawing.Size(100, 22);
             this.txtKategoriAdi.TabIndex = 1;
             // 
-            // txtAciklama
-            // 
-            this.txtAciklama.Location = new System.Drawing.Point(111, 62);
-            this.txtAciklama.Name = "txtAciklama";
-            this.txtAciklama.Size = new System.Drawing.Size(100, 96);
-            this.txtAciklama.TabIndex = 5;
-            this.txtAciklama.Text = "";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Açıklama";
-            // 
             // KategoriYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(879, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvKategoriler);
             this.Name = "KategoriYonetimi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EF Kategori Yonetimi";
             this.Load += new System.EventHandler(this.KategoriYonetimi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKategoriler)).EndInit();

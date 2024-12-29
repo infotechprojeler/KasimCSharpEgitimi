@@ -7,5 +7,6 @@ namespace WindowsFormsAppEntityFramework
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; } // DbSet ler entity frameworkte veritabanı tablolarını ifade eder. Her bir dbset  veritabanındaki bir tabloya karşılık gelir.
+        public DbSet<User> Users { get; set; }
     }
 }
