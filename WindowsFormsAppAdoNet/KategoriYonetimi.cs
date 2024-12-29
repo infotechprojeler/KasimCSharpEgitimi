@@ -95,7 +95,7 @@ namespace WindowsFormsAppAdoNet
                     Id = Convert.ToInt32(dgvKategoriler.CurrentRow.Cells[0].Value)
                 };
                 BaglantiyiAc();
-                SqlCommand sqlCommand = new SqlCommand("update Kategoriler set Name=  @Name where Id=@id", conn);
+                SqlCommand sqlCommand = new SqlCommand("update Kategoriler set Name=@Name where Id=@id", conn);
                 sqlCommand.Parameters.AddWithValue("@Name", kategori.Name);
                 sqlCommand.Parameters.AddWithValue("@id", kategori.Id);
                 var sonuc = sqlCommand.ExecuteNonQuery(); // ExecuteNonQuery metodu sql deki execute işlemini yapar ve bize sql den gelen etkilenen kayıt sayısını getirir.
