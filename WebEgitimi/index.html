@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Anasayfa</title>
+    <link type="image/x-icon" rel="icon" href="/Images/favicon.ico" />
+</head>
+
+<body>
+    Html Eğitimi
+    <br> html de br yazıp tab a basarak yazıyı bir alt satıra geçiriyoruz.
+    <br />
+    1 sayfada 1 tane html 1 tane head 1 tane de body etiketi olmalıdır!
+    <br>
+    Favicon Kullanarak Sekmeye İkon Ekleme
+    <br>
+    head tagları arasına favicon kodunu ekliyoruz (bu kodu sekmede ikon kullanan her hangi bir sitenin kaynak kodundan
+    kopyalayabiliriz.)
+    <br>
+    Favicon formatı .ico veya .png olmalıdır. png dosyası 16x16 veya 32x32 px olmalıdır!
+    <br>
+    TEMEL HTML ELEMENTLERİ
+    <br>
+    BAŞLIK ELEMENTLERİ
+    <h1>h1 En büyük başlık elementidir.</h1>
+    <h2>h2 h1 in bir alt başlığı olarak kullanılabilir</h2>
+    <h3>h3 orta boyutlu başlık</h3>
+    <h4>h4 başlık</h4>
+    <h5>h5 başlık</h5>
+    <h6>h6 en küçük başlık</h6>
+    <p>
+        p elementi sayfada paragraf metni oluşturmak için kullanılır.
+    </p>
+    <div>
+        div elementi sayfada ayrı bölümler oluşturmak için kullanılır.
+    </div>
+    <div>
+        her div ve p elementi ayrı satırlarda gösterilir, yan yana gösterilmez.
+        Bu elementlere blok seviyesi elementleri denir.
+    </div>
+    <h3>
+        a Elementi ile sayfalar arası bağlantı verme
+    </h3>
+    <a href="#">Anasayfa</a>
+    <a href="https://www.google.com.tr/">Google</a>
+    <br />
+    <br />
+    <a href="https://www.google.com.tr/" target="_blank">Google ı yeni sekmede aç</a>
+    <br />
+    <br />
+    <a href="olmayansayfa.html">Olmayan sayfa tarayıcı tarafından 404 not found-sayfa bulunamadı hatası döndürür</a>
+    <h3>
+        Sayfada Resim Gösterme
+    </h3>
+    <p>
+        web sayfalarında resim göstermek için img elementi kullanılır, src özelliğine resmin konumu verilir, eğer
+        boyutlandırma yapacaksak width ve heigth özellikleri de eklenebilir.
+    </p>
+    <img src="#" alt="Alternate Text" />
+    <img src="https://www.google.com.tr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" />
+    <img src="Images/googlelogo.png" alt="Alternate Text" />
+    <img src="Images/logoInfotechAcademy.png" alt="Infotech Academy"
+        title="title özelliği resme açılır bilgi alanı ekler">
+    <img src="Images/logoInfotechAcademy.png" alt="Infotech Academy" width="118">
+    <img src="Images/logoInfotechAcademy.png" alt="Infotech Academy" height="75">
+    <img src="Images/logoInfotechAcademy.png" alt="Infotech Academy" width="118" height="75">
+    <p>
+        Resimlere width özelliği ile genişlik, height özelliğiyle yükseklik değeri belirleyebiliriz.
+    </p>
+    <h3>
+        Sayfada Tablo İle Ekran Tasarımı
+    </h3>
+    <p>
+        Bir web sayfasını table tr ve td taglarıyla tasarlayabiliriz.
+        <br>
+        Genelde tablolar veri gösterimi gibi işlemlerde kullanılır.
+    </p>
+    <table>
+        <tr>
+            <td>
+                1 table 1 tr 1 td den oluşan tablo
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>
+                1 table 1 tr 1 th den oluşan tablo
+            </th>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <td>
+                tablo ya border özelliği vererek çerçeveyi görünür hale getiririz.
+            </td>
+            <td>
+                1. satırdaki 2. kolon (1 tr içindeki her td yan yana 1 kolon açar)
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <td>1. satır 1. sütun</td>
+            <td>1. satır 2. sütun</td>
+        </tr>
+        <tr>
+            <td>2. satır 1. sütun</td>
+            <td>2. satır 2. sütun</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <td>1. satır 1. sütun</td>
+            <td>1. satır 2. sütun</td>
+            <td>1. satır 3. sütun</td>
+        </tr>
+        <tr>
+            <td>2. satır 1. sütun</td>
+            <td>2. satır 2. sütun</td>
+            <td>2. satır 3. sütun</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <td>
+                <a href="anasayfa.html">anasayfa</a>
+            </td>
+            <td>
+                <a href="index.html">index</a>
+            </td>
+            <td>
+                <a href="#">iletişim</a>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>Kategori No</th>
+            <th>Kategori Adı</th>
+            <th>Durum</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Elektronik</td>
+            <td>Aktif</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bilgisayar</td>
+            <td>Pasif</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Telefon</td>
+            <td>Aktif</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>
+        Tablolarda Satır ve Sütunları Birleştirme
+    </h3>
+
+    <table border="1">
+        <caption>
+            caption ile tablo içerisine başlık ekleyebiliriz
+        </caption>
+        <tr>
+            <td rowspan="3">
+                Ürün Bilgileri
+            </td>
+        </tr>
+        <tr>
+            <td>Ürün Adı:</td>
+            <td>Dell Laptop</td>
+        </tr>
+        <tr>
+            <th rowspan="3">
+                rowspan özelliği ile kolona lazım olan sayı kadar satırlık alan kaplamasını sağlayabiliriz.
+            </th>
+            <td>
+                <img src="Images/googlelogo.png" alt="">
+            </td>
+        </tr>
+    </table>
+
+    <h3>
+        Colspan ile Sütunları Birleştirme
+    </h3>
+
+    <table border="1" width="555">
+        <tr>
+            <th>
+                Ürün Adı
+            </th>
+            <td>
+                Klavye
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                bu td de colspan="2" özelliğiyle 1 td nin 2 kolonluk yer kaplaması sağlandı
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1 satırda tek td
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <i>i elementi</i>
+
+    <br>
+
+    <em>em elementi</em>
+
+    <br>
+
+    <span>
+        span elementi
+    </span>
+
+    <span>yan yana satır içi metinler için kullanılır</span>
+
+    <br>
+
+    <b>b elementi metni bold-kalın yapmak için kullanılır</b>
+
+    <br>
+
+    <strong>strong elementi vurgulanmak istenen alanı kalın gösterir</strong>
+
+    <h2>
+        Element içinde <small>small ile</small> bir yazıyı daha küçük gösterebiliriz
+    </h2>
+
+    <div>
+        Bir yazı içerisinde <mark>vurgulamak istediğimiz alanı mark ile</mark> gösterebiliriz.
+    </div>
+
+    <ins>
+        html ins elementi
+    </ins>
+
+    <p>
+        sub elementi ile <sub>alt</sub> çıkıntılı metin gösterebiliriz
+    </p>
+
+    <p>
+        sup elementi ile <sup>üst</sup> çıkıntılı metin gösterebiliriz
+    </p>
+
+    <hr>
+
+    <h3>
+        Html Liste Elementleri
+    </h3>
+
+    <p>
+        Sıralı, sırasız ve açıklamalı olmak üzere 3 farklı liste elementi var.
+    </p>
+
+    <ul>
+        <li>Unordered list - ul - sırasız liste</li>
+        <li>sırasız liste oluşturur</li>
+        <li>ul elementi altına li eklenerek oluşturulur</li>
+    </ul>
+
+    <ul>
+        <li>
+            <a href="/anasayfa.html">anasayfa</a>
+        </li>
+        <li>
+            <a href="/index.html">index</a>
+        </li>
+        <li>
+            <a href="#iletisim">iletişim</a>
+        </li>
+    </ul>
+
+    <h4>Ordered List - Sıralı Liste</h4>
+
+    <ol>
+        <li>Elektronik</li>
+        <li>Bilgisayar</li>
+        <li>Telefon</li>
+    </ol>
+
+    <h4>
+        Açıklamalı Liste
+    </h4>
+
+    <dl>
+        <dt>Ürün Adı:</dt>
+        <dd>Asus laptop</dd>
+        <dt>Fiyatı:</dt>
+        <dd>18.000₺</dd>
+        <dt>Stok:</dt>
+        <dd>18 Adet</dd>
+        <dt>Ürün Resmi:</dt>
+        <dd><img src="Images/googlelogo.png" alt="google"></dd>
+    </dl>
+
+    <h3>Html Koduna Yorum Satırı Ekleme</h3>
+
+    <p>
+        kod editöründe html kodları arasına bir yorum satırı eklemek istersek ilgli metni seçip ctrl+k +c kısayıloyla
+        yorum satırı yapabiliriz.
+        <br>
+        Yorum satırını açmak için ctrl tuşuna basılı tutarken k + u tuşları yorum satırını açar.
+    </p>
+
+    <!-- Burası yorum alanı kod bitişi -->
+
+    <h3>Fieldset Elementi</h3>
+
+    <fieldset>
+        <legend>Kullanıcı Girişi</legend>
+        <form action="index.html">
+            <table border="1">
+                <tr>
+                    <td>Kullanıcı Adı</td>
+                    <td>
+                        <input type="text" name="username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre</td>
+                    <td>
+                        <input type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Giriş" id="btnGiris">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <h3>Get Metoduyla Ürün Arama</h3>
+    <form action="index.html" method="get">
+        <input type="search" name="kelime" id="kelime" value="" placeholder="Ürün Ara">
+        <input type="submit" value="Ara">
+    </form>
+
+    <h3>Post Metoduyla Ürün Arama</h3>
+    <form action="index.html" method="post">
+        <input type="search" name="kelime" id="kelime" value="" placeholder="Ürün Ara">
+        <input type="submit" value="Ara">
+    </form>
+
+</body>
+
+</html>

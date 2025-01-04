@@ -49,6 +49,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppEntityFramew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{EA0CF7CF-9060-4527-A72A-A97B4EFDE43E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebEgitimi", "WebEgitimi", "{C03D86D4-8C57-4A34-AA8C-0C25318440D8}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{249E8DC1-CCFF-4580-91B1-10BAC25EE8A2}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\favicon.ico = ..\..\..\Desktop\favicon.ico
+		..\..\..\Desktop\googlelogo.png = ..\..\..\Desktop\googlelogo.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -150,6 +161,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{249E8DC1-CCFF-4580-91B1-10BAC25EE8A2} = {C03D86D4-8C57-4A34-AA8C-0C25318440D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {949D0448-50A2-4A4A-8CE1-A61E999FE6F5}
