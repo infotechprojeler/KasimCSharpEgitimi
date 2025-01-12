@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css04 Genislik Yukseklik</title>
+</head>
+<body>
+    <h1>Css Genişlik ve Yükseklik Ayarları</h1>
+    <p style="width:350px; height:180px; background-color: bisque">
+        Css ile bir öğenin genişliğini ayarlamak için width
+        <br />
+        Yüksekliğini ayarlamak için height özelliği kullanılır
+    </p>
+    <h2>
+        Alabildiği Değerler
+    </h2>
+    <div style="height:200px; width:50%; background-color:antiquewhite">
+        auto : varsayılan değer
+        <br />
+        length: px, cm, em, rem ile boyut verebiliriz
+        <br />
+        % : yüzdesel olarak ölçü verebiliriz
+        <br />
+        initial : uygulanan boyutları varsayılan değere çeker
+        <br />
+        inherit: genişlik ve yüksekliği ana değerlerden alır
+    </div>
+
+    <h2>Maksimum Genişlik ve Yükseklik</h2>
+    <div style="max-height: 100px; max-width:180px; border: 1px solid">
+        Elementlere maksimum genişlik ve yükseklik tanımlamak için kulanılır.
+    </div>
+
+    <hr />
+    
+    <p style="width:10em; height:5em; padding:1.8em; margin:3em; background: silver">
+        Em kullanım örneği : 1em = 16px yapar
+    </p>
+    
+    <hr />
+
+    <p style="width:10rem; height:5rem; padding:1.8rem; margin:3rem; background: silver">
+        Rem kullanım örneği : 1rem = 16px, rem ölçüsü mobil cihazlarda esneme özelliğine sahip
+    </p>
+
+    <h3>İçerik Taşması</h3>
+    
+    <p style="width:200px; height:200px; background-color:bisque; border:1px solid; overflow:auto;">
+        Elementlerin içerikleri alana sığmazsa taşma oluşur.
+        <br />
+        Bu durumda css overflow özelliği ile durumu kontrol edebiliriz.
+        <br />
+        overflow özellikleri
+        <br />
+        visible: varsayılan değer, taşmaya müdahale edilmez
+        <br />
+        hidden: taşan kısım gizlenir
+        <br />
+        scroll: taşma kırpılır ve görünmeyen içerik için kaydırma çubuğu çıkar
+        <br />
+        auto: scrolla benzer, sadece gerektiğinde kaydırma çubuğu çıkar
+    </p>
+
+</body>
+</html>
