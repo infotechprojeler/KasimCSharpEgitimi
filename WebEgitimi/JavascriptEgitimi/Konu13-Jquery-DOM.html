@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konu13-Jquery-DOM İşlemleri</title>
+    <style>
+        .baslik {
+            color: red;
+            font-size: larger
+        }
+    
+        .renk {
+            color: crimson
+        }
+    
+        .brd {
+            border: 1px dashed blue;
+            min-height: 1rem;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>Konu13-Jquery-DOM İşlemleri</h1>
+    <h2>Html Input Değerlerini Alma</h2>
+    <form action="">
+        <input type="text" id="metin" value="textbox içindeki değer" />
+        <hr>
+        <textarea name="urunAciklama" id="urunAciklama"></textarea>
+        <hr>
+        <input type="checkbox" name="checkbox1" id="checkbox1"> Onaylıyorum
+        <hr>
+        <select id="dropdownlist">
+            <option value="Elektronik">Elektronik</option>
+            <option value="Bilgisayar">Bilgisayar</option>
+            <option value="Telefon">Telefon</option>
+        </select>
+        <hr>
+        <input type="radio" name="cinsiyet" value="Kadın" /> Kadın
+        <input type="radio" name="cinsiyet" value="Erkek" /> Erkek
+        <hr />
+        <a href="index.html" title="Anasayfa">Anasayfa</a>
+    </form>
+    <p id="sonuclar"></p>
+    <input type="button" id="button1" value="Sonuçlar" />
+    <input type="button" id="button2" value="Attribute Değerleri" />
+    <script>
+        $("#button1").click(function () {
+            // ekrandaki button1 id li elemente tıklandığında
+            var degerler = "";
+            
+        });
+    </script>
+</body>
+</html>
