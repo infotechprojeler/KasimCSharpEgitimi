@@ -154,6 +154,14 @@
     <script>
         $(".degisim").on("change", function () {
             $("#jqchange").html($(this).val())
+        });
+
+        $("#degisim").change(function () {
+            $("#jqchange").text($(this).val())
+        });
+
+        $("#degisim").on("keyup", function () {
+            $("#jqchange").html($(this).val())
         })
     </script>
 </body>
