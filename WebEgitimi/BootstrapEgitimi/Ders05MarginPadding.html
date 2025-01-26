@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Margin Padding Kullanımı</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bootstrap Margin Padding Kullanımı</h1>
+        <p>
+            Bootrstarp de elemanların margin ve paddinglerini ayarlamak için classlar bulunur.
+            <br>
+            xs,sm,md,lg.. ön takılarıyla kırılımlara göre de ayrı ayrı bu boşluk classlarını kullanabiliriz.
+        </p>
+
+        <h2>Margin-Dış Boşluk Kullanımı</h2>
+        <div class="row">
+            <div class="col-4">
+                kolon 1
+            </div>
+            <div class="col-4 ms-auto">
+                kolon 2 ms-auto classı margin startın kısaltması
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-4">
+                kolon 1
+            </div>
+            <div class="col-4 me-auto">
+                kolon 2 me-auto classı margin endin kısaltması
+            </div>
+            <div class="col-1">
+                kolon 3
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-2">
+                2 birimlik ilk kolon
+            </div>
+            <div class="col-3 ms-5">
+                3 birimlik 2. kolon ms-5 margin start 5 birim boşluk bırakır
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-2">
+                2 birimlik ilk kolon
+            </div>
+            <div class="col-3 ms-5 me-5">
+                3 birimlik 2. kolon ms-5 margin start 5 birim boşluk bırakır
+                <br>
+                ms: margin left, me:margin-right
+            </div>
+            <div class="col">
+                son kolon
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="mt-1 mb-2 ms-3 me-5">
+            Bootstrap de bir kolona üstten margin vermek için mt-0 .. 5 arasında, <br />
+            alttan margin vermek için mb-0 .. 5 arasında, <br />
+            soldan margin vermek için ms-0 .. 5 arasında, <br />
+            sağdan margin vermek için me-0 .. 5 arasında, class değeri verebiliriz
+        </div>
+
+        <div class="m-5">
+            eğer 4 yönden margin vereceksek m-0 .. 5 classını
+        </div>
+
+        <div class="mx-5">
+            mx-5 classı soldan ve sağdan 5 birimlik boşluk verir.
+            mx-0 .. 5 arası değer alır.
+        </div>
+
+        <div class="my-5">
+            my-5 classı üstten ve alttan 5 birimlik boşluk verir.
+            my-0 .. 5 arası değer alır.
+        </div>
+
+        <h3>Padding-İç Boşluk</h3>
+
+        <div class="pt-1 pb-2 ps-3 pe-5">
+            Bootstrap de bir kolona üstten Padding vermek için mt-0 .. 5 arasında, <br />
+            alttan Padding vermek için mb-0 .. 5 arasında, <br />
+            soldan Padding vermek için ms-0 .. 5 arasında, <br />
+            sağdan Padding vermek için me-0 .. 5 arasında, class değeri verebiliriz
+        </div>
+
+        <div class="p-5">
+            eğer 4 yönden Padding vereceksek m-0 .. 5 classını
+        </div>
+
+        <div class="px-5">
+            px-5 classı soldan ve sağdan 5 birimlik boşluk verir.
+            px-0 .. 5 arası değer alır.
+        </div>
+
+        <div class="py-5">
+            py-5 classı üstten ve alttan 5 birimlik boşluk verir.
+            py-0 .. 5 arası değer alır.
+        </div>
+
+        <hr>
+
+        <h2>Metin Hizalama</h2>
+
+        <p class="text-center">
+            text-center classı elementteki içeriği ortalamamızı sağlar
+        </p>
+
+        <p class="text-end">
+            text-end : sağa hizala
+        </p>
+
+        <p class="text-start">
+            text-start : sola hizala
+        </p>
+
+        <p class="text-center">
+            <img src="/Images/googlelogo.png" />
+        </p>
+
+        <hr>
+
+        <h3>Resimleri Responsive Hale Getirme</h3>
+
+        <p>
+            Bootstrap de resimler için classlar mevcuttur
+            <br />
+            img-fluid class ı resmi responsive hale getririr
+            <br />
+            img-thumbnail class ı dışı çizgili küçük resim formatı verir
+        </p>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="/Images/bgVideo.jpg" class="img-fluid" />
+            </div>
+            <div class="col-5">
+                <img src="/Images/mikroservisler_egitimi_infotech20.png" class="img-thumbnail" />
+            </div>
+        </div>
+        
+        <hr>
+
+        <h3>
+            Diğer Boyutlandırma Yöntemi
+        </h3>
+        
+        <p>
+            w-25 : %25 <br />
+            w-50 : %50 <br />
+            w-75 : %75 <br />
+            w-100 : %100 <br />
+        </p>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="/Images/bgVideo.jpg" class="w-100" />
+            </div>
+            <div class="col-5">
+                <img src="/Images/mikroservisler_egitimi_infotech20.png" class="w-75" />
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

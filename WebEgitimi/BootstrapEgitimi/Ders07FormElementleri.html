@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders07 Form Elementleri</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ders07 Form Elementleri</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Kullanıcı Adı</td>
+                    <td>
+                        <input type="text" name="txtKullanici" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre</td>
+                    <td>
+                        <input type="password" name="txtSifre" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Giriş">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <hr>
+
+        <h3>Bootstrap Uygulanmış Hali</h3>
+        <form action="">
+            <table class="table table-bordered w-50 m-auto">
+                <tr>
+                    <td>Kullanıcı Adı</td>
+                    <td>
+                        <input type="text" name="txtKullanici" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre</td>
+                    <td>
+                        <input type="password" name="txtSifre" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Giriş">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+
+</html>

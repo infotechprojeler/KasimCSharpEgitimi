@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Hizalama</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css">
+</head>
+<body>
+    <h1>Bootstrap Hizalama</h1>
+    <p>
+        Bootrstarp css display flex özelliğini kullanır ve dikeyde yatayda buna göre hizalama yapar.
+    </p>
+    <h2>Kolonları Dikeyde Hizalama</h2>
+    <div>
+        <h3>Hizalama class ları</h3>
+        <ol>
+            <li>align-items-start : başlangıça hizala</li>
+            <li>align-items-center : merkeze hizala</li>
+            <li>align-items-end : sona hizala</li>
+        </ol>
+    </div>
+
+    <div class="row row-cols-4 align-items-center" style="min-height: 222px; background-color: antiquewhite;">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">0</div>
+        <div class="col">1</div>
+        <div class="col">2</div>
+    </div>
+
+    <hr>
+    
+    <h2>Kolonları Yatayda Hizalama</h2>
+    
+    <ol>
+        <li>justify-content-start : başa hizala</li>
+        <li>justify-content-center : merkeze hizala</li>
+        <li>justify-content-end : sona hizala</li>
+        <li>justify-content-around : her iki yana eşit boşlukla hizala</li>
+        <li>justify-content-between : ilk öğe başa, son öğe sona gelecek şekilde boşlukla hizala</li>
+        <li>justify-content-evenly : tüm kolonları eşit şekilde boşlukla hizala</li>
+    </ol>
+
+    <div class="row justify-content-center" style="min-height: 122px; background-color: antiquewhite;">
+        <div class="col-2">1</div>
+        <div class="col-2">2</div>
+        <div class="col-2">3</div>
+        <div class="col-2">4</div>
+    </div>
+    
+    <br><br><br><br><br>
+</body>
+</html>
